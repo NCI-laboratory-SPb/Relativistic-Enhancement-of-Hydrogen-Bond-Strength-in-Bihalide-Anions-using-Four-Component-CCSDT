@@ -1,9 +1,9 @@
 4cDCCCSDQTAIM.py
+
 This script performs a four-component electron density calculation on a three-dimensional grid of points. The density is derived from a CCSD wave function generated with the Dirac-Coulomb and Lévy-Leblond Hamiltonians, incorporating a Gaussian finite-nucleus model.
 
 Usage:
 
-bash
 4cDCCCSDQTAIM.py molecule.xyz [-DC | -LL] -dyall.BASIS
 where molecule.xyz is one of: FHF.xyz, ClHCl.xyz, BrHBr.xyz, IHI.xyz
 BASIS can be any of the Dyall basis sets:
@@ -23,11 +23,11 @@ Required keys:
 -dyall.BASIS – Expansion of the large and small components of one-electron bispinors in terms of a chosen uncontracted basis set of the Dyall family
 
 XHXgennucconf.py
+
 A code for generating nuclear configurations representing proton motion along normal modes in hydrogen bonds, under the constraint of a fixed center of mass.
 
 Usage:
 
-bash
 XHXgennucconf.py [-FHF | -ClHCl | -BrHBr | -IHI] [-Q2 | -Q3]
 Required keys:
 
@@ -44,11 +44,11 @@ Required keys:
 -Q3 – Generating nuclear configurations that represent proton motion along the internuclear axis while keeping the center of mass fixed
 
 RovibPartitionFunctionCalc.py
+
 This program computes the translational, vibrational, and rotational components of thermodynamic functions using molecular constants (including the nuclear configuration point group, total molecular mass, vibrational frequencies, and rotational constants) together with external parameters (temperature and pressure). It supports atomic systems, linear tops, and asymmetric (nonlinear) tops.
 
 Usage:
 
-bash
 RovibPartitionFunctionCalc.py -PG=point_group -M=mass -T=temperature -p=pressure [additional keys]
 Required keys:
 
@@ -77,12 +77,12 @@ For nonlinear molecules (all other PG except SO3):
 -freq=[...] – list of vibrational frequencies (including degeneracy), cm⁻¹
 
 1DSESolver.py
+
 A Python script for numerical solution of the one-dimensional time-independent Schrödinger equation with optional rovibrational coupling for linear rotators. No installation required. Simply download the script and run it with Python. Only NumPy and SciPy are required.
 
 Usage:
 
-bash
-python 1DSESolver.py -f potential.dat [options]
+1DSESolver.py -f potential.dat [options]
 Keys:
 
 -f FILE – Path to input file with coordinate (Å) and potential (Hartree) [REQUIRED]
