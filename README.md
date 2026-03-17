@@ -48,3 +48,8 @@ For nonlinear molecules (all other PG except SO3):
     -B=...      second rotational constant, cm⁻¹
     -C=...      third rotational constant, cm⁻¹
     -freq=[...] list of vibrational frequencies (including degeneracy), cm⁻¹
+
+1DSESolver.py
+This script solves one-dimensional Shrodinger equation in the provided potential. You can switch on rotational energy part for rovibrational treatment of the problem. Current implementation support only two-atomic molecules form for rotational part of total Hamiltonian.
+Usage:
+    
