@@ -1,3 +1,5 @@
+This repository contains the original (author's) codes used in the work «Relativistic Enhancement of Hydrogen Bond Strength in Bihalide Anions: A Four-Component CCSD(T) Study» for: the four-component calculation of electron density on a three-dimensional grid of points (4cDCCCSDQTAIM.py), the numerical solution of the rovibrational Schrödinger equation for linear tops (1DSESolver.py), the generation of nuclear configurations along normal modes (XHXgennucconf.py), and the calculation of thermodynamic functions (RovibPartitionFunctionCalc.py).
+
 4cDCCCSDQTAIM.py
 
 This script performs a four-component electron density calculation on a three-dimensional grid of points. The density is derived from a CCSD wave function generated with the Dirac-Coulomb and Lévy-Leblond Hamiltonians, incorporating a Gaussian finite-nucleus model.
