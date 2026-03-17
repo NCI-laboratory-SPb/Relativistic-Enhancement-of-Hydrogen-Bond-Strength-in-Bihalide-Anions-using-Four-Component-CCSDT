@@ -50,6 +50,14 @@ For nonlinear molecules (all other PG except SO3):
     -freq=[...] list of vibrational frequencies (including degeneracy), cm⁻¹
 
 1DSESolver.py
-This script solves one-dimensional Shrodinger equation in the provided potential. You can switch on rotational energy part for rovibrational treatment of the problem. Current implementation support only two-atomic molecules form for rotational part of total Hamiltonian.
+A Python script for numerical solution of the one-dimensional time-independent Schrödinger equation with optional rovibrational coupling for linear rotators. No installation required. Simply download the script and run it with Python. Only NumPy and SciPy are required.  
 Usage:
-    
+    python 1DSESolver.py -f potential.dat [options]
+Keys:
+    -f FILE          # Path to input file with coordinate (Å) and potential (Hartree) [REQUIRED]
+    -d POLYNOM_DEGREE # Degree of polynomial for potential fitting (default: 10)
+    --min MIN_COORD  # Minimum coordinate value for grid (default: min from input file)
+    --max MAX_COORD  # Maximum coordinate value for grid (default: max from input file)
+    -b BINS          # Number of grid points (default: 200)
+    -m MASS          # Reduced mass in proton mass units (default: 1)
+    -j J             # Rotational quantum number (default: 0)
