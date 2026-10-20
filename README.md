@@ -1,7 +1,7 @@
 This repository contains the original (author's) codes used in the work «Relativistic Enhancement of Hydrogen Bond Strength in Bihalide Anions: A Four-Component CCSD(T) Study» for: the four-component calculation of electron density on a three-dimensional grid of points (4cDCCCSDQTAIM.py), the numerical solution of the rovibrational Schrödinger equation for linear tops (1DSESolver.py), the generation of nuclear configurations along normal modes (XHXgennucconf.py), and the calculation of thermodynamic functions (RovibPartitionFunctionCalc.py).
 
 4cDCCCSDQTAIM.py
-
+```text
 This script performs a four-component electron density calculation on a three-dimensional grid of points. The density is derived from a CCSD wave function generated with the Dirac-Coulomb and Lévy-Leblond Hamiltonians, incorporating a Gaussian finite-nucleus model.
 
 Usage:
@@ -24,9 +24,10 @@ Required keys:
 -LL (Perform four-component calculations with Lévy-Leblond Hamiltonian)
 
 -dyall.BASIS (Expansion of the large and small components of one-electron bispinors in terms of a chosen uncontracted basis set of the Dyall family)
+```
 
 XHXgennucconf.py
-
+```text
 A code for generating nuclear configurations representing proton motion along normal modes in hydrogen bonds, under the constraint of a fixed center of mass.
 
 Usage:
@@ -46,8 +47,10 @@ Required keys:
 -Q2 (Generating nuclear configurations that represent proton motion perpendicular to the internuclear axis while keeping the center of mass fixed)
 
 -Q3 (Generating nuclear configurations that represent proton motion along the internuclear axis while keeping the center of mass fixed)
+```
 
 RovibPartitionFunctionCalc.py
+```text
 
 This program computes the translational, vibrational, and rotational components of thermodynamic functions using molecular constants (including the nuclear configuration point group, total molecular mass, vibrational frequencies, and rotational constants) together with external parameters (temperature and pressure). It supports atomic systems, linear tops, and asymmetric (nonlinear) tops.
 
@@ -81,8 +84,9 @@ For nonlinear molecules (all other PG except SO3):
 
 -freq=[...] (list of vibrational frequencies (including degeneracy), cm⁻¹)
 
+```
 1DSESolver.py
-
+```text
 A Python script for numerical solution of the one-dimensional time-independent Schrödinger equation with optional rovibrational coupling for linear rotators. No installation required. Simply download the script and run it with Python. Only NumPy and SciPy are required.
 
 Usage:
@@ -104,3 +108,4 @@ Keys:
 -m MASS (Reduced mass in proton mass units (default: 1))
 
 -j J (Rotational quantum number (default: 0))
+```
